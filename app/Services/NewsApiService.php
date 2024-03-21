@@ -15,7 +15,7 @@ class NewsApiService
             ]);
             $response = $client->request('GET', 'https://newsapi.org/v2/top-headlines', [
                 'query' => [
-                    'country' => 'us',
+                    'language' => 'en',
                     'apiKey' => env('NEWS_API_KEY'),
                 ]
             ]);

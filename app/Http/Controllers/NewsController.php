@@ -14,8 +14,8 @@ class NewsController extends Controller
     public function index()
     {
         $news = $this->newsService->getTopNews();
-        // dd($articles);
         $articles = json_decode(json_encode($news['articles']));
+        // dd($articles);
         return view('index', [
             'articles' => $articles
         ]);

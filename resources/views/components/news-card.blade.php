@@ -1,11 +1,10 @@
 @props(['article'])
-<div class="container-fluid">
-    <div class="card">
-        <div class="card-header">
-            <h2>{{ $article->title }}</h2>
-        </div>
-        <div class="card-body">
-            <p>{{ $article->description }}</p>
-        </div>
+
+<div class="container article-container">
+    <div class="container article-bg">
+        <img src="{{ isset($article->urlToImage) ? $article->urlToImage : 'https://placeholder.com/500' }}" alt="">
+    </div>
+    <div class="container article-text">
+        <h2 class="article-title"><a href="">{{ $article->title }}</a></h2>
     </div>
 </div>
