@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #1f306e;
+}
+.navbar-brand {
+    font-size: x-large;
+    color: aliceblue;
+    font-weight: 700;
+    border-right: 2px solid red;
+    padding-right: 20px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: aliceblue;
+}
+
+.navbar-toggler {
+    color: aliceblue;
+    background-color: aliceblue;
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+    color: aliceblue;
+}
+
+.current {
+    color: aliceblue;
+    font-weight: 600;
+    font-size: large;
+}
