@@ -33,7 +33,7 @@
 
 .top-news{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     flex-wrap: wrap;
     flex-direction: row;
@@ -73,4 +73,56 @@
 .article-title a:hover,
 .article-title a:focus {
     color: rgba(240, 248, 255, 0.507);
+}
+
+.relative {
+    position: relative;
+    z-index: 0;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+/* Override Tailwind CSS styles with Bootstrap styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.pagination > li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    padding: 6px 12px;
+    border: 1px solid #dee2e6;
+    color: #007bff;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+.pagination > li > a:hover {
+    z-index: 2;
+    color: #0056b3;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    text-decoration: none;
+}
+
+.pagination > .active > a,
+.pagination > .active > span {
+    z-index: 3;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    text-decoration: none;
+}
+
+.pagination > .disabled > span {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: not-allowed;
 }

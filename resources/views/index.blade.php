@@ -12,6 +12,11 @@
         @endif
     @endforeach
     </div>
+    <nav aria-label="Page navigation pagination-container">
+        <ul class="pagination">
+            {{ $articles->links() }}
+        </ul>
+    </nav>    
     @else
     {{ 'No articles found.' }}
     @endif

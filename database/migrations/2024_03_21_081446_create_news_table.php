@@ -12,14 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('news', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->text('description');
-            $table->string('category');
-            $table->string('image');
-            $table->string('author');
-            $table->string('url');
-            $table->string('source');
+            $table->id()->autoIncrement();
+            $table->string('source')->nullable();
+            $table->string('name')->nullable();
+            $table->string('author')->nullable();
+            $table->longText('title')->unique();
+            $table->longText('description')->nullable()->default('No Description');
+            $table->longText('url')->nullable();
+            $table->longText('urlToImage')->nullable();
+            $table->string('publishedAt');
+            $table->longText('content')->nullable()->default('No Content');
             $table->timestamps();
         });
     }
