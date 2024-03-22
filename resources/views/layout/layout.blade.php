@@ -28,7 +28,10 @@
                     <a class="nav-link" href="#">Buisness</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Life Style</a>
+                    <a class="nav-link" href="#">Politics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Health</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Technology</a>
@@ -40,7 +43,10 @@
                     <a class="nav-link" href="#">Sport</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#">Health</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
                   </li>
                 </ul>
                 <form class="d-flex">
