@@ -14,10 +14,7 @@ class NewsController extends Controller
 
         // Fetch news articles from the API
         $apiArticles = $newsApiService->getTopNews();
-        $apiArticles = json_decode(json_encode($apiArticles['articles']), true);
-        foreach ($apiArticles as $apiArticle) {
-            dd($apiArticle['content']);
-        }
+        dd($apiArticles['news']);
 
         if(!isset($apiArticles)) {
             // Retrieve all news articles from the database
@@ -30,7 +27,7 @@ class NewsController extends Controller
         }
 
         // Decode JSON response
-        $apiArticles = json_decode(json_encode($apiArticles['articles']), true);
+        $apiArticles = json_decode(json_encode($apiArticles['news']), true);
 
         // Iterate over each article
         foreach ($apiArticles as $apiArticle) {
